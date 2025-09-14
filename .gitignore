@@ -390,3 +390,61 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor temporary files
+*.swp
+*.swo
+*~
+
+# Application specific
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json
+
+# XAML/WinUI Generated Files
+**/*.g.h
+**/*.g.hpp
+**/*.g.cpp
+**/*.xaml.g.h
+**/*.xaml.g.cpp
+**/XamlTypeInfo.g.cpp
+**/XamlMetaDataProvider.g.cpp
+**/XamlMetaDataProvider.cpp
+**/XamlMetaDataProvider.h
+**/XamlMetaDataProvider.g.h
+**/XamlMetaDataProvider.idl
+**/XamlBindingInfo.xaml.g.h
+**/XamlLibMetadataProvider.g.cpp
+**/XamlTypeInfo.Impl.g.cpp
+**/XamlTypeInfo.xaml.g.h
+**/module.g.cpp
+**/App.xaml.g.h
+**/MainWindow.g.cpp
+**/MainWindow.g.h
+**/MainWindow.xaml.g.h
+
+# WinUI/UWP specific
+Generated Files/
+**/Generated Files/
+
+# --- vcpkg (manifest mode) ---
+vcpkg_installed/
+.vcpkg-root
+
+# --- keep vendored native binaries for packaging (override the x64/ rule) ---
+!ThirdParty/
+!ThirdParty/pdfium/
+!ThirdParty/pdfium/x64/
+!ThirdParty/pdfium/arm64/
+!ThirdParty/pdfium/**/pdfium.dll
+!ThirdParty/pdfium/**/pdfium.lib

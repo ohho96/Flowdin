@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="Flowdin.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Flowdin"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Flowdin">
+
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+
+		<!-- Header -->
+		<TextBlock Grid.Row="0"
+				   Text="Welcome to Flowdin"
+				   FontSize="24"
+				   HorizontalAlignment="Center"
+				   Margin="20"/>
+
+		<!-- Main Content Area -->
+		<StackPanel Grid.Row="1"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					Spacing="20">
+
+			<TextBox x:Name="NameTextBox"
+					 Header="Enter your name:"
+					 PlaceholderText="Your name here..."
+					 Width="300"/>
+
+			<Button x:Name="GreetButton"
+					Content="Say Hello"
+					HorizontalAlignment="Center"
+					Click="GreetButton_Click"/>
+
+			<TextBlock x:Name="GreetingText"
+					   FontSize="18"
+					   HorizontalAlignment="Center"
+					   Foreground="Blue"/>
+		</StackPanel>
+
+		<!-- Footer -->
+		<TextBlock Grid.Row="2"
+				   Text="Your first WinUI 3 app!"
+				   HorizontalAlignment="Center"
+				   Margin="20"
+				   Opacity="0.7"/>
+    </Grid>
+</Window>
